@@ -43,7 +43,7 @@ public class Colosseum {
      * <p>
      * Requirements we should check the user for: <br>
      * - Hit points are between 1 and MAX_HIT_POINTS <br>
-     * - No more than 50 points are split between attack level and defense leve <br>
+     * - No more than 50 points are split between attack level and defense level <br>
      * - Attack level and defense level must have at least 1 point each <br>
      * Example of how this will look to the user:
      * <p>
@@ -72,8 +72,24 @@ public class Colosseum {
      *         Implement this function.
      */
     public static Pokemon buildPokemon() {
+
+        int hitPoints = myScan.nextInt();
+        if (hitPoints > 1 && hitPoints < MAX_HIT_POINTS) {
+            String.valueOf(hitPoints) =
+        }
+
+        int attackLevel = myScan.nextInt();
+        if (attackLevel >= 1 && attackLevel < MAX_HIT_POINTS) {
+            String.valueOf(attackLevel) =
+        }
+
+        int defenseLevel = MAX_HIT_POINTS - attackLevel;
+        
+
         Pokemon tempPokemon = new Pokemon();
         return tempPokemon;
+
+
     }
 
     /**
